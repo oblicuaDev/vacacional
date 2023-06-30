@@ -86,6 +86,11 @@
             </div>
         </aside>
         <ul class="events_list_grid"></ul>
+        <?php if($_GET['idAgenda'] == '149'){ ?>
+            <div class="aclaracion">
+                <p>El IDT no es el organizador de los eventos aquí publicados.</p>
+            </div>
+        <?php } ?>
     </div>
 </main>
 

@@ -1,5 +1,5 @@
 {
-  "enableTranslates": ["es", "en", "pt"],
+  "enableTranslates": ["es", "en", "pt", "fr"],
   "enableMainHeader": true,
   "menuItems": [
     {
@@ -31,6 +31,20 @@
         "title": "Explore Bogotá"
       },
       "children": [
+        {
+          "es": {
+            "title": "Cerros",
+            "link": "/es/explora/cerros/2572"
+          },
+          "en": {
+            "title": "Cerros",
+            "link": "/en/explora/cerros/2572"
+          },
+          "pt": {
+            "title": "Cerros",
+            "link": "/pt/explora/cerros/2572"
+          }
+        },
         {
           "es": {
             "title": "Ruta Colonial",
@@ -105,7 +119,63 @@
       "fr": {
         "title": "Qué hacer",
         "link": "/fr/eventos/agenda-general-148"
-      }
+      },
+      "children": [
+        {
+          "es": {
+            "title": "Eventos",
+            "link": "/es/eventos/agenda-general-148"
+          },
+          "en": {
+            "title": "Events",
+            "link": "/en/eventos/agenda-general-148"
+          },
+          "pt": {
+            "title": "Eventos",
+            "link": "/pt/eventos/agenda-general-148"
+          },
+          "fr": {
+            "title": "Eventos",
+            "link": "/fr/eventos/agenda-general-148"
+          }
+        },
+        {
+          "es": {
+            "title": "Festival por la igualdad",
+            "link": "/es/eventos/festival-por-la-igualdad-149"
+          },
+          "en": {
+            "title": "Festival por la igualdad",
+            "link": "/en/eventos/festival-por-la-igualdad-149"
+          },
+          "pt": {
+            "title": "Festival por la igualdad",
+            "link": "/pt/eventos/festival-por-la-igualdad-149"
+          },
+          "fr": {
+            "title": "Festival por la igualdad",
+            "link": "/fr/eventos/festival-por-la-igualdad-149"
+          }
+        },
+        {
+          "es": {
+            "title": "Blog",
+            "link": "/es/blog"
+          },
+          "en": {
+            "title": "Blog",
+            "link": "/en/blog"
+          },
+          "pt": {
+            "title": "Blog",
+            "link": "/pt/blog"
+          },
+          "fr": {
+            "title": "Blog",
+            "link": "/fr/blog"
+          }
+        }
+      ]
     },
     {
       "es": {
@@ -123,6 +193,24 @@
       "fr": {
         "title": "Dónde dormir",
         "link": "/fr/hoteles"
+      }
+    },
+    {
+      "es": {
+        "title": "Dónde comer",
+        "link": "/es/restaurantes"
+      },
+      "en": {
+        "title": "Dónde comer",
+        "link": "/en/restaurantes"
+      },
+      "pt": {
+        "title": "Dónde comer",
+        "link": "/pt/restaurantes"
+      },
+      "fr": {
+        "title": "Dónde comer",
+        "link": "/fr/restaurantes"
       }
     },
     {

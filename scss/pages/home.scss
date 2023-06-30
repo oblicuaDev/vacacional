@@ -4,7 +4,14 @@
     height: 80vh;
     position: relative;
     min-height: 768px;
+    @media only screen and (max-width: 1024px) {
+      height: calc(100vw / 16 * 9);
+      min-height: calc(100vw / 16 * 9);
+    }
     .banner-add {
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
       img {
         width: 400px;
         height: 100%;
@@ -15,9 +22,13 @@
     -moz-box-shadow: 0px 14px 17px -6px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 14px 17px -6px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 14px 17px -6px rgba(0, 0, 0, 0.75);
-    height: 80vh;
     position: relative;
+    height: 80vh;
     min-height: 768px;
+    @media only screen and (max-width: 1024px) {
+      height: calc(100vw / 16 * 9);
+      min-height: calc(100vw / 16 * 9);
+    }
     .container {
       display: flex;
       align-items: center;
@@ -41,6 +52,9 @@
             left: 0;
             width: 100%;
             height: 100%;
+            @media only screen and (max-width: 1024px) {
+              background-color: rgba($color: #000000, $alpha: 0.5);
+            }
           }
         }
       }
@@ -51,6 +65,9 @@
           width: 20px;
           height: 33px;
           object-fit: contain;
+          @media only screen and (max-width: 1023px) {
+            width: 10px;
+          }
         }
       }
 
@@ -58,13 +75,21 @@
         gap: 10px;
         justify-content: flex-end;
         padding: 0 50px;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
       }
       .splide__pagination__page {
-        width: 26px;
-        height: 26px;
+        width: 16px;
+        height: 16px;
         border: 2px solid #fff;
         background: transparent;
         opacity: 1;
+        @media only screen and (max-width: 1023px) {
+          border: 1px solid #fff;
+          width: 10px;
+          height: 10px;
+        }
         &:hover {
           background: #fff;
           transform: none;
@@ -89,6 +114,9 @@
         transform: translateX(-50%);
         width: 100%;
         z-index: 5;
+        @media only screen and (max-width: 1024px) {
+          bottom: 0;
+        }
         h2 {
           color: #fff;
           font-size: 48px;
@@ -96,6 +124,10 @@
           text-align: right;
           margin-bottom: 25px;
           margin: 0 0 0 auto;
+          @media only screen and (max-width: 1024px) {
+            font-size: 20px;
+            margin-bottom: 0;
+          }
         }
         p {
           text-align: right;
@@ -104,6 +136,10 @@
           margin-bottom: 33px;
           font-size: 21px;
           margin: 0 0 30px auto;
+          @media only screen and (max-width: 1024px) {
+            font-size: 12px;
+            margin: 0 0 5px auto;
+          }
         }
         a {
           color: #fff;
@@ -118,6 +154,9 @@
           max-width: 100%;
           width: fit-content;
           padding: 8px 25px;
+          @media only screen and (max-width: 1024px) {
+            font-size: 12px;
+          }
           &:hover {
             background-color: #fff;
             color: #333;
@@ -128,12 +167,17 @@
   }
   .zones {
     padding: 85px 0;
+    @media only screen and (max-width: 1024px) {
+      padding: 30px 0 20px;
+    }
     .flex {
       display: flex;
       align-items: center;
+      gap: 70px;
       justify-content: space-between;
       @media screen and (max-width: 1024px) {
         flex-direction: column;
+        gap: 30px;
       }
     }
     h2 {
@@ -141,20 +185,33 @@
       margin-bottom: 60px;
       font-size: 40px;
       color: #333;
+      @media only screen and (max-width: 1024px) {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: #333;
+        font-family: "MuseoSans-900";
+      }
     }
 
     .map {
+      width: 100%;
+      background-color: #6dc184;
+      svg {
+        width: 100%;
+        height: 390px;
+      }
+      @media only screen and (max-width: 1024px) {
+        width: 100%;
+      }
+
       img {
         width: 415px;
       }
     }
-    @media only screen and (max-width: 768px) {
-      .splide {
-        display: none;
-      }
-    }
+
     .zone-card {
-      width: 209px;
+      width: 100%;
       height: 280px;
       overflow: hidden;
       box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
@@ -176,13 +233,14 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        padding: 28px;
+        padding: 15px;
         h3 {
           color: #fff;
           font-size: 19px;
           padding: 7px;
           margin-bottom: 16px;
           position: relative;
+          text-align: center;
           &::after {
             content: "";
             height: 1px;
@@ -198,6 +256,29 @@
           text-align: center;
           font-size: 10px;
           margin-bottom: 23px;
+        }
+        .localidades {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 18px;
+          // height: 0;
+          @media only screen and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+          }
+          a {
+            color: #fff;
+            font-family: "MuseoSans-700";
+            font-size: 12px;
+            text-align: center;
+            display: block;
+            @media only screen and (max-width: 1024px) {
+              font-size: 16px;
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         }
         a.btn {
           color: #fff;
@@ -230,24 +311,48 @@
         object-fit: contain;
       }
     }
-    .splide__slide.is-visible,
-    .splide__slide.splide__slide--clone.is-next,
-    .splide__slide.is-next {
-      transform: scale(0.9);
-
-      p {
-        height: 0;
-        overflow: hidden;
-        margin: 0;
+  }
+  svg:not(:root) {
+    overflow: visible;
+  }
+  .zoneSvg {
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: center;
+    z-index: 20;
+    path {
+      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    &#zone-115,
+    &#zone-117,
+    &#zone-114,
+    &#zone-118 {
+      path {
+        fill: #dbdbdb;
       }
     }
-    .splide__slide.is-visible.is-active {
-      transform: scale(1);
 
-      p {
-        height: auto;
-        overflow: hidden;
-        margin-bottom: 15px;
+    &.active,
+    &:hover {
+      &#zone-118 {
+        path {
+          fill: #ffb863;
+        }
+      }
+      &#zone-115 {
+        path {
+          fill: #5098ff;
+        }
+      }
+      &#zone-117 {
+        path {
+          fill: #ff7c47;
+        }
+      }
+      &#zone-114 {
+        path {
+          fill: #0f2c52;
+        }
       }
     }
   }
@@ -277,18 +382,24 @@
           width: 370px;
           margin-bottom: 50px;
           display: block;
-          @media only screen and (max-width: 768px) {
-            width: 100%;
+          @media only screen and (max-width: 1024px) {
+            width: 70%;
           }
         }
         h4 {
           color: #6dc184;
           font-size: 30px;
+          @media only screen and (max-width: 768px) {
+            text-align: center;
+          }
         }
         h5 {
           font-size: 20px;
           color: #66a4ff;
           margin-bottom: 20px;
+          @media only screen and (max-width: 768px) {
+            text-align: center;
+          }
         }
         .btn {
           font-size: 14px;
@@ -304,6 +415,9 @@
           color: #fff;
           transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
           background-color: #fff;
+          @media only screen and (max-width: 768px) {
+            padding: 10px 17px;
+          }
           &:hover {
             transform: scale(1.1);
           }
@@ -328,9 +442,6 @@
         gap: 22px;
         align-items: center;
         justify-content: center;
-        @media screen and (max-width: 1024px) {
-          flex-direction: column;
-        }
       }
       &-card {
         display: flex;
@@ -340,18 +451,24 @@
         transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         img {
           border-radius: 21px;
-          height: 100%;
           height: 221px;
           margin-bottom: 28px;
           box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.5);
-
-          width: 100%;
           width: 221px;
+          @media only screen and (max-width: 768px) {
+            height: calc(33vw - 40px);
+            width: calc(33vw - 40px);
+            margin-bottom: 5px;
+          }
         }
         span {
           display: block;
           font-size: 20px;
           color: #333333;
+          @media only screen and (max-width: 768px) {
+            font-size: 12px;
+            text-align: center;
+          }
         }
         &:hover {
           opacity: 0.8;
@@ -362,6 +479,9 @@
   .mobile {
     height: 600px;
     position: relative;
+    @media only screen and (max-width: 768px) {
+      height: 100vw;
+    }
     img {
       height: 100%;
       width: 100%;
@@ -380,20 +500,26 @@
       z-index: 10;
       border-radius: 20px 20px 0 0;
       padding: 40px 100px;
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 1024px) {
         flex-direction: column;
         align-items: center;
-        padding: 20px 50px;
+        padding: 20px;
         width: 100%;
       }
       h2 {
         color: #333;
         font-size: 26px;
+        @media only screen and (max-width: 768px) {
+          font-size: 20px;
+        }
       }
       p {
         color: #333;
         font-size: 16px;
         margin-bottom: 15px;
+        @media only screen and (max-width: 768px) {
+          font-size: 12px;
+        }
       }
       a.btn {
         background-color: #ff7c47;
@@ -413,11 +539,19 @@
       }
       .applogo {
         width: 120px;
+        @media only screen and (max-width: 768px) {
+          width: 70px;
+        }
       }
       .apps {
         display: flex;
         align-items: center;
         gap: 21px;
+        @media only screen and (max-width: 768px) {
+          align-items: center;
+
+          justify-content: center;
+        }
         img {
           width: 35px;
           transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -437,19 +571,24 @@
     padding: 150px 0 80px;
     @media screen and (max-width: 1024px) {
       grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
       justify-items: center;
+      padding: 100px 0 80px;
     }
     &-card {
       border-radius: 20px;
-      width: 380px;
       position: relative;
+      width: 380px;
       height: 380px;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
       box-shadow: 12px 1px 15px -3px rgba(0, 0, 0, 0.5);
-
+      @media only screen and (max-width: 768px) {
+        height: calc(70vw - 40px);
+        width: calc(70vw - 40px);
+      }
       img {
         transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         width: 80%;
@@ -488,6 +627,9 @@
       text-align: center;
       color: #333333;
       margin-bottom: 30px;
+      @media only screen and (max-width: 768px) {
+        font-size: 20px;
+      }
     }
     .grid-blogs {
       display: grid;
@@ -495,6 +637,7 @@
       gap: 50px;
       margin-bottom: 50px;
       @media screen and (max-width: 1024px) {
+        gap: 15px;
         grid-template-columns: repeat(2, 1fr);
       }
       a {
@@ -540,7 +683,7 @@
             font-size: 21px;
             margin-bottom: 10px;
             @media screen and (max-width: 1023px) {
-              font-size: 18px;
+              font-size: 14px;
             }
           }
           p {
@@ -549,7 +692,7 @@
             font-size: 16px;
             margin-bottom: 15px;
             @media screen and (max-width: 1023px) {
-              display: none;
+              font-size: 12px;
             }
           }
           .btn {
@@ -563,6 +706,9 @@
             padding: 8px;
             max-width: 188px;
             border-radius: 5px;
+            @media only screen and (max-width: 768px) {
+              font-size: 12px;
+            }
           }
         }
         &:hover {
@@ -598,10 +744,18 @@
     position: relative;
     overflow: hidden;
     height: 260px;
+    @media only screen and (max-width: 768px) {
+      height: auto;
+      padding: 0;
+    }
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      @media only screen and (max-width: 768px) {
+        aspect-ratio: 16 / 9;
+        height: auto;
+      }
     }
   }
 }

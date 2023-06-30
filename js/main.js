@@ -85,11 +85,92 @@ async function getRecentBlogs() {
 }
 
 async function getZonesHome() {
-  let zones = await fetch("/g/zonas/")
+  await fetch("g/zonas/")
     .then((res) => res.json())
-    .then((data) => data);
+    .then(async (data) => {
+      for (const [index, zona] of data.entries()) {
+        console.log(zona);
+        let template;
+        if (zona.tid == 136) {
+          template = `
+          <li class="splide__slide" data-index="${index}" data-zone="${zona.tid}">
+          <div class="zone-card">
+            <img src="${zona.field_imagen_zona}" alt="zone" />
+            <div class="info">
+              <h3 class="uppercase ms900">${zona.name}</h3>
+              <a href="/${actualLang}/alrededores-de-bogota" class="uppercase ms900 btn wait">VISITAR</a>
+            </div>
+          </div>
+        </li>`;
+        } else {
+          const localidadesText = await localidades(zona.tid);
 
-  return zones;
+          template = `
+          <li class="splide__slide" data-index="${index}" data-zone="${zona.tid}">
+          <div class="zone-card">
+            <img src="${zona.field_imagen_zona}" alt="zone" />
+            <div class="info">
+              <h3 class="uppercase ms900">${zona.name}</h3>
+              <ul class="localidades">
+                ${localidadesText}
+              </ul>
+            </div>
+          </div>
+        </li>`;
+        }
+
+        document.querySelector(".splide2 .splide__list").innerHTML += template;
+      }
+    })
+    .then(() => {
+      const splide = new Splide(".splide2", {
+        perPage: 1,
+        gap: 10,
+        width: 400,
+        focus: "center",
+        type: "loop",
+        pagination: false,
+        lazyLoad: "nearby",
+        classes: {
+          arrows: "splide__arrows your-class-arrows",
+          arrow: "splide__arrow your-class-arrow",
+          prev: "splide__arrow--prev your-class-prev",
+          next: "splide__arrow--next your-class-next",
+        },
+      }).mount();
+      document.querySelectorAll(".zoneSvg").forEach((svg) => {
+        svg.addEventListener("click", () => {
+          document.querySelector(".zoneSvg.active").classList.remove("active");
+          svg.classList.add("active");
+          document
+            .querySelector(`[data-zone="${svg.id.split("-")[1]}"]`)
+            .classList.add("active");
+          const { Move } = splide.Components;
+          splide.go(
+            parseInt(
+              document.querySelector(`[data-zone="${svg.id.split("-")[1]}"]`)
+                .dataset.index
+            ),
+            { animation: true }
+          );
+        });
+      });
+    });
+}
+
+async function localidades(zonaId) {
+  let text = "";
+  const localidadesData = await fetch(
+    `https://bogotadc.travel/drpl/es/api/v1/es/zones/all/${zonaId}`
+  ).then((res) => res.json());
+
+  localidadesData.forEach((localidad) => {
+    text += `<li><a href="/${actualLang}/zona/${get_alias(localidad.title)}/${
+      localidad.nid
+    }" class="zone_cards_item wait">${localidad.title} </a></li>`;
+  });
+
+  return text;
 }
 
 function shorter(text, chars_limit = 35) {

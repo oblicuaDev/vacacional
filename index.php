@@ -12,6 +12,16 @@ $lastblogs = $vacacional->getLastBlogs();
           </ul>
           <div class="splide__track">
             <ul class="splide__list">
+              
+            <li class="splide__slide">
+                <img src="images/igualdad_banner.jpg" alt="homebanner" />
+                <div class="content">
+                  <h2 class="ms900 uppercase"></h2>
+                  <p class="ms500">
+                  </p>
+                  <a class="wait" href="/<?=$lang?>/eventos/festival-por-la-igualdad-149">Conoce más </a>
+                </div>
+              </li>
               <li class="splide__slide">
                 <img src="images/cerros.jpeg" alt="homebanner" />
                 <div class="content">
@@ -23,7 +33,7 @@ $lastblogs = $vacacional->getLastBlogs();
                     tu bienestar y recargarte de buena energía en espacios
                     naturales.
                   </p>
-                  <a href="#">¡Quiero saber más!</a>
+                  <a class="wait" href="/<?=$lang?>/explora/cerros/2572">¡Quiero saber más!</a>
                 </div>
               </li>
               <li class="splide__slide">
@@ -36,7 +46,7 @@ $lastblogs = $vacacional->getLastBlogs();
                     Te espera una ciudad auténtica, brillante, cosmópolita y
                     dinámica. Los mayores eventos del país ocurren aquí.
                   </p>
-                  <a href="">Ver más</a>
+                  <a class="wait" href="/<?=$lang?>/mice">Ver más</a>
                 </div>
               </li>
 
@@ -49,19 +59,10 @@ $lastblogs = $vacacional->getLastBlogs();
                     dinamismo de una gran metrópolil y la invitación de nuestros
                     cerros para disfrutar del senderismo.
                   </p>
-                  <a href="">Conoce más </a>
+                  <a class="wait" href="/<?=$lang?>/explora/senderismo/64">Conoce más </a>
                 </div>
               </li>
 
-              <li class="splide__slide">
-                <img src="images/igualdad_banner.jpg" alt="homebanner" />
-                <div class="content">
-                  <h2 class="ms900 uppercase"></h2>
-                  <p class="ms500">
-                  </p>
-                  <a href="eventos/festival-por-la-igualdad-149">Conoce más </a>
-                </div>
-              </li>
             </ul>
           </div>
           <div class="splide__arrows splide__arrows--ltr">
@@ -85,7 +86,7 @@ $lastblogs = $vacacional->getLastBlogs();
         <h2 class="uppercase ms700">bogotá por zonas</h2>
         <div class="flex">
           <div class="map">
-            <img src="images/mapa.svg" alt="mapa" />
+            <?php include "templates/map.php"; ?>
           </div>
           <section class="splide splide2" aria-label="Splide Basic HTML Example">
             <div class="splide__arrows splide__arrows--ltr">
@@ -100,96 +101,7 @@ $lastblogs = $vacacional->getLastBlogs();
             </div>
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="zone-card">
-                    <img src="images/zone.jpg" alt="zone" />
-                    <div class="info">
-                      <h3 class="uppercase ms900">Zona Centro</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi
-                        enim ad minim veniam, quis
-                      </p>
-                      <a href="" class="uppercase ms900 btn">VISITAR</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="zone-card">
-                    <img src="images/zone.jpg" alt="zone" />
-                    <div class="info">
-                      <h3 class="uppercase ms900">Zona Norte</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi
-                        enim ad minim veniam, quis
-                      </p>
-                      <a href="" class="uppercase ms900 btn">VISITAR</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="zone-card">
-                    <img src="images/zone.jpg" alt="zone" />
-                    <div class="info">
-                      <h3 class="uppercase ms900">Zona Sur</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi
-                        enim ad minim veniam, quis
-                      </p>
-                      <a href="" class="uppercase ms900 btn">VISITAR</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="zone-card">
-                    <img src="images/zone.jpg" alt="zone" />
-                    <div class="info">
-                      <h3 class="uppercase ms900">Zona Centro</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi
-                        enim ad minim veniam, quis
-                      </p>
-                      <a href="" class="uppercase ms900 btn">VISITAR</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="zone-card">
-                    <img src="images/zone.jpg" alt="zone" />
-                    <div class="info">
-                      <h3 class="uppercase ms900">Zona Norte</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi
-                        enim ad minim veniam, quis
-                      </p>
-                      <a href="" class="uppercase ms900 btn">VISITAR</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="zone-card">
-                    <img src="images/zone.jpg" alt="zone" />
-                    <div class="info">
-                      <h3 class="uppercase ms900">Zona Sur</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi
-                        enim ad minim veniam, quis
-                      </p>
-                      <a href="" class="uppercase ms900 btn">VISITAR</a>
-                    </div>
-                  </div>
-                </li>
+               
               </ul>
             </div>
           </section>
@@ -210,10 +122,10 @@ $lastblogs = $vacacional->getLastBlogs();
           o explora los atractivos turÍsticos de la ciudad
         </h6>
         <div class="cards">
-          <a href="/hoteles/" class="city-card"><img src="images/dormir.jpg" alt="dormir" /><span class="uppercase ms700">Dónde
+          <a href="/<?=$lang?>/hoteles" class="city-card"><img src="images/dormir.jpg" alt="dormir" /><span class="uppercase ms700">Dónde
               dormir</span></a>
-          <!-- <a class="city-card"><img src="images/comer.jpg" alt="comer" /><span class="uppercase ms700">Dónde
-              comer</span></a> -->
+           <a href="/<?=$lang?>/restaurantes" class="city-card"><img src="images/comer.jpg" alt="comer" /><span class="uppercase ms700">Dónde
+              comer</span></a>
           <a href="eventos/agenda-general-148" class="city-card"><img src="images/hacer.jpg" alt="hacer" /><span class="uppercase ms700">qué
               hacer</span></a>
         </div>
@@ -231,14 +143,27 @@ $lastblogs = $vacacional->getLastBlogs();
           </p>
           <!-- <a href="" class="btn uppercase ms900">DESCARGAR</a> -->
           <div class="apps">
-            <a href="<?= $b->generalInfo->field_playstore ?>"><img src="images/google.png" alt="google" /></a>
-            <a href="<?= $b->generalInfo->field_appstore ?>"><img src="images/apple.png" alt="apple" /></a>
+          <?php
+          $userAgent = $_SERVER['HTTP_USER_AGENT'];
+
+          if (strpos($userAgent, 'Android') !== false) {
+              // Es un dispositivo Android, muestra contenido específico para Android
+              echo '<a href="' . $b->generalInfo->field_playstore . '"><img src="images/google.png" alt="google" /></a>';
+          } elseif (strpos($userAgent, 'iPhone') !== false || strpos($userAgent, 'iPad') !== false) {
+              // Es un dispositivo iOS (iPhone o iPad), muestra contenido específico para iOS
+              echo '<a href="' . $b->generalInfo->field_appstore . '"><img src="images/apple.png" alt="apple" /></a>';
+          } else {
+              // No es un dispositivo Android ni iOS, muestra contenido genérico
+              echo '<a href="' . $b->generalInfo->field_playstore . '"><img src="images/google.png" alt="google" /></a><a href="' . $b->generalInfo->field_appstore . '"><img src="images/apple.png" alt="apple" /></a>';
+          }
+          ?>
+
           </div>
         </div>
       </div>
     </section>
     <section class="more container">
-      <a href="/banco-imagenes/" class="more-card wait">
+      <a href="/<?=$lang?>/banco-imagenes/" class="more-card wait">
         <img src="images/devices.png" alt="devices" />
       </a>
       <a href="/<?=$lang?>/ruta-leyenda-el-dorado/inicio" class="more-card wait">
@@ -276,20 +201,7 @@ $lastblogs = $vacacional->getLastBlogs();
         page: "splide__pagination__page your-class-page",
       },
     }).mount();
-    new Splide(".splide2", {
-      type: "loop",
-      perPage: 3,
-      gap: 10,
-      width: 640,
-      focus: "center",
-      pagination: false,
-      classes: {
-        arrows: "splide__arrows your-class-arrows",
-        arrow: "splide__arrow your-class-arrow",
-        prev: "splide__arrow--prev your-class-prev",
-        next: "splide__arrow--next your-class-next",
-      },
-    }).mount();
+   
     </script>
 </body>
 
