@@ -70,7 +70,7 @@ async function getRecentBlogs() {
           <img loading="lazy" data-src="${urlImg}" alt="Diversidad, cultura y música en Colombia al Parque" class="zone_img lazyload" src="https://via.placeholder.com/400x400.jpg?text=Bogotadc.travel" />
         </div>
         <div class="desc">
-          <h3 class="uppercase">${blog.field_prod_rel_1}</h3>
+          <h1 class="uppercase">${blog.field_prod_rel_1}</h1>
           <h2 class="uppercase">${shorter(blog.title, 35)}</h2>
           <p>${blog.body_1}</p>
           <div class="btn uppercase ms900">Seguir leyendo</div>
@@ -110,7 +110,7 @@ async function getZonesHome() {
           <div class="zone-card">
             <img src="${zona.field_imagen_zona}" alt="zona"${zona.name} />
             <div class="info">
-              <h3 class="uppercase ms900">${zona.name}</h3>
+              <h4 class="uppercase ms900">${zona.name}</h4>
               <ul class="localidades">
                 ${localidadesText}
               </ul>

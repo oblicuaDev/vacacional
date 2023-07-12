@@ -16,7 +16,7 @@ $lastblogs = $vacacional->getLastBlogs();
             <li class="splide__slide">
                 <img src="images/igualdad_banner.jpg" alt="igualdad" />
                 <div class="content">
-                  <h2 class="ms900 uppercase"></h2>
+                  <h1 class="ms900 uppercase"></h1>
                   <p class="ms500">
                   </p>
                   <a class="wait" href="/<?=$lang?>/eventos/festival-por-la-igualdad-149">Conoce más </a>
@@ -39,9 +39,9 @@ $lastblogs = $vacacional->getLastBlogs();
               <li class="splide__slide">
                 <img src="images/mice.jpeg" alt="grandeseventos" />
                 <div class="content">
-                  <h2 class="ms900 uppercase">
+                  <h3 class="ms900 uppercase">
                     Somos epicentro de grandes eventos
-                  </h2>
+                  </h3>
                   <p class="ms500">
                     Te espera una ciudad auténtica, brillante, cosmópolita y
                     dinámica. Los mayores eventos del país ocurren aquí.
@@ -53,7 +53,7 @@ $lastblogs = $vacacional->getLastBlogs();
               <li class="splide__slide">
                 <img src="images/recorridos.jpeg" alt="recorridos" />
                 <div class="content">
-                  <h2 class="ms900 uppercase">Conoce la ciudad paso a paso</h2>
+                  <h4 class="ms900 uppercase">Conoce la ciudad paso a paso</h4>
                   <p class="ms500">
                     Camina por Bogotá. Encontrarás la unión perfecta entre el
                     dinamismo de una gran metrópolil y la invitación de nuestros
@@ -83,7 +83,7 @@ $lastblogs = $vacacional->getLastBlogs();
     </div>
     <section class="zones">
       <div class="container">
-        <h2 class="uppercase ms700">bogotá por zonas</h2>
+        <h1 class="uppercase ms700">bogotá por zonas</h1>
         <div class="flex">
           <div class="map">
             <?php include "templates/map.php"; ?>
@@ -111,8 +111,8 @@ $lastblogs = $vacacional->getLastBlogs();
     <section class="planes">
       <div class="pb">
         <div class="content">
-          <h4 class="ms900">RESERVA LOS PLANES</h4>
-          <h5 class="ms900">QUE NO TE PUEDES PERDER EN</h5>
+          <h2 class="ms900">RESERVA LOS PLANES</h2>
+          <h3 class="ms900">QUE NO TE PUEDES PERDER EN</h3>
           <img src="images/logopb.svg" alt="plan Bogota" />
           <a href="/plan-bogota" class="ms900 uppercase btn">RESERVA GRATIS AHORA</a>
         </div>
@@ -136,7 +136,7 @@ $lastblogs = $vacacional->getLastBlogs();
       <div class="message">
         <img src="images/app_logo_1.png" alt="aplicacion" class="applogo" />
         <div class="text">
-          <h2 class="uppercase ms900">DESCARGA EL APP OFICIAL DE BOGOTÁ</h2>
+          <h1 class="uppercase ms900">DESCARGA EL APP OFICIAL DE BOGOTÁ</h1>
           <p class="ms700">
             ¡Es hora de descargar la APP de Bogotá DC Travel y tener a la
             ciudad en tus manos!
