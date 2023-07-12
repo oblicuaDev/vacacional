@@ -14,7 +14,7 @@ $lastblogs = $vacacional->getLastBlogs();
             <ul class="splide__list">
               
             <li class="splide__slide">
-                <img src="images/igualdad_banner.jpg" alt="homebanner" />
+                <img src="images/igualdad_banner.jpg" alt="igualdad" />
                 <div class="content">
                   <h2 class="ms900 uppercase"></h2>
                   <p class="ms500">
@@ -23,7 +23,7 @@ $lastblogs = $vacacional->getLastBlogs();
                 </div>
               </li>
               <li class="splide__slide">
-                <img src="images/cerros.jpeg" alt="homebanner" />
+                <img src="images/cerros.jpeg" alt="cerros" />
                 <div class="content">
                   <h2 class="ms900 uppercase">
                     Es hora de volver a la naturaleza
@@ -37,7 +37,7 @@ $lastblogs = $vacacional->getLastBlogs();
                 </div>
               </li>
               <li class="splide__slide">
-                <img src="images/mice.jpeg" alt="homebanner" />
+                <img src="images/mice.jpeg" alt="grandeseventos" />
                 <div class="content">
                   <h2 class="ms900 uppercase">
                     Somos epicentro de grandes eventos
@@ -51,7 +51,7 @@ $lastblogs = $vacacional->getLastBlogs();
               </li>
 
               <li class="splide__slide">
-                <img src="images/recorridos.jpeg" alt="homebanner" />
+                <img src="images/recorridos.jpeg" alt="recorridos" />
                 <div class="content">
                   <h2 class="ms900 uppercase">Conoce la ciudad paso a paso</h2>
                   <p class="ms500">
@@ -68,11 +68,11 @@ $lastblogs = $vacacional->getLastBlogs();
           <div class="splide__arrows splide__arrows--ltr">
             <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
               aria-controls="splide01-track">
-              <img src="images/arrowleft.svg" alt="arrowleft" />
+              <img src="images/arrowleft.svg" alt="flechaizquierda" />
             </button>
             <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
               aria-controls="splide01-track">
-              <img src="images/arrowright.svg" alt="arrowright" />
+              <img src="images/arrowright.svg" alt="flechaderecha" />
             </button>
           </div>
         </section>
@@ -92,11 +92,11 @@ $lastblogs = $vacacional->getLastBlogs();
             <div class="splide__arrows splide__arrows--ltr">
               <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
                 aria-controls="splide01-track">
-                <img src="images/arrowleftgray.svg" alt="arrowleft" />
+                <img src="images/arrowleftgray.svg" alt="flechaizquierda" />
               </button>
               <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
                 aria-controls="splide01-track">
-                <img src="images/arrowrightgray.svg" alt="arrowright" />
+                <img src="images/arrowrightgray.svg" alt="flechaderecha" />
               </button>
             </div>
             <div class="splide__track">
@@ -122,19 +122,19 @@ $lastblogs = $vacacional->getLastBlogs();
           o explora los atractivos turÍsticos de la ciudad
         </h6>
         <div class="cards">
-          <a href="/<?=$lang?>/hoteles" class="city-card"><img src="images/dormir.jpg" alt="dormir" /><span class="uppercase ms700">Dónde
+          <a href="/<?=$lang?>/hoteles" class="city-card"><img src="images/dormir.jpg" alt=" donde dormir" /><span class="uppercase ms700">Dónde
               dormir</span></a>
-           <a href="/<?=$lang?>/restaurantes" class="city-card"><img src="images/comer.jpg" alt="comer" /><span class="uppercase ms700">Dónde
+           <a href="/<?=$lang?>/restaurantes" class="city-card"><img src="images/comer.jpg" alt="donde comer" /><span class="uppercase ms700">Dónde
               comer</span></a>
-          <a href="eventos/agenda-general-148" class="city-card"><img src="images/hacer.jpg" alt="hacer" /><span class="uppercase ms700">qué
+          <a href="eventos/agenda-general-148" class="city-card"><img src="images/hacer.jpg" alt="que hacer" /><span class="uppercase ms700">qué
               hacer</span></a>
         </div>
       </div>
     </section>
     <section class="mobile">
-      <img src="images/mobile.jpg" alt="mobileBanner" />
+      <img src="images/mobile.jpg" alt="movil" />
       <div class="message">
-        <img src="images/app_logo_1.png" alt="app logo" class="applogo" />
+        <img src="images/app_logo_1.png" alt="aplicacion" class="applogo" />
         <div class="text">
           <h2 class="uppercase ms900">DESCARGA EL APP OFICIAL DE BOGOTÁ</h2>
           <p class="ms700">
@@ -164,14 +164,14 @@ $lastblogs = $vacacional->getLastBlogs();
     </section>
     <section class="more container">
       <a href="/<?=$lang?>/banco-imagenes/" class="more-card wait">
-        <img src="images/devices.png" alt="devices" />
+        <img src="images/devices.png" alt="dispositivos" />
       </a>
       <a href="/<?=$lang?>/ruta-leyenda-el-dorado/inicio" class="more-card wait">
-        <img src="/img/rld/logo-full.svg" alt="rld" />
+        <img src="/img/rld/logo-full.svg" alt="ruta leyenda" />
       </a>
       <a href="" class="more-card">
         <button class="closeadd">X</button>
-        <img src="images/add.jpg" alt="rld" />
+        <img src="images/add.jpg" alt="ruta leyenda" />
       </a>
     </section>
     <section class="recent-blogs">
@@ -181,7 +181,7 @@ $lastblogs = $vacacional->getLastBlogs();
     </section>
     <section class="add container">
       <button class="closeadd">X</button>
-      <img src="images/largeadd.jpg" alt="add" />
+      <img src="images/largeadd.jpg" alt="turistea por bogota" />
     </section>
   </main>
  

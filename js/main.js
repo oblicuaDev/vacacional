@@ -95,7 +95,7 @@ async function getZonesHome() {
           template = `
           <li class="splide__slide" data-index="${index}" data-zone="${zona.tid}">
           <div class="zone-card">
-            <img src="${zona.field_imagen_zona}" alt="zone" />
+            <img src="${zona.field_imagen_zona}" alt="zona"${zona.name} />
             <div class="info">
               <h3 class="uppercase ms900">${zona.name}</h3>
               <a href="/${actualLang}/alrededores-de-bogota" class="uppercase ms900 btn wait">VISITAR</a>
@@ -108,7 +108,7 @@ async function getZonesHome() {
           template = `
           <li class="splide__slide" data-index="${index}" data-zone="${zona.tid}">
           <div class="zone-card">
-            <img src="${zona.field_imagen_zona}" alt="zone" />
+            <img src="${zona.field_imagen_zona}" alt="zona"${zona.name} />
             <div class="info">
               <h3 class="uppercase ms900">${zona.name}</h3>
               <ul class="localidades">
