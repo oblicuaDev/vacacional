@@ -25,9 +25,9 @@ $lastblogs = $vacacional->getLastBlogs();
               <li class="splide__slide">
                 <img src="images/cerros.jpeg" alt="cerros" />
                 <div class="content">
-                  <h2 class="ms900 uppercase">
+                  <h1 class="ms900 uppercase">
                     Es hora de volver a la naturaleza
-                  </h2>
+                  </h1>
                   <p class="ms500">
                     La Bogotá Región te ofrece los mejores planes para recuperar
                     tu bienestar y recargarte de buena energía en espacios
@@ -39,9 +39,9 @@ $lastblogs = $vacacional->getLastBlogs();
               <li class="splide__slide">
                 <img src="images/mice.jpeg" alt="grandeseventos" />
                 <div class="content">
-                  <h3 class="ms900 uppercase">
+                  <h1 class="ms900 uppercase">
                     Somos epicentro de grandes eventos
-                  </h3>
+                  </h1>
                   <p class="ms500">
                     Te espera una ciudad auténtica, brillante, cosmópolita y
                     dinámica. Los mayores eventos del país ocurren aquí.
@@ -53,7 +53,7 @@ $lastblogs = $vacacional->getLastBlogs();
               <li class="splide__slide">
                 <img src="images/recorridos.jpeg" alt="recorridos" />
                 <div class="content">
-                  <h4 class="ms900 uppercase">Conoce la ciudad paso a paso</h4>
+                  <h1 class="ms900 uppercase">Conoce la ciudad paso a paso</h1>
                   <p class="ms500">
                     Camina por Bogotá. Encontrarás la unión perfecta entre el
                     dinamismo de una gran metrópolil y la invitación de nuestros
