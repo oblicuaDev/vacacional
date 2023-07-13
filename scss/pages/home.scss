@@ -180,7 +180,7 @@
         gap: 30px;
       }
     }
-    h2 {
+    h1 {
       text-align: center;
       margin-bottom: 60px;
       font-size: 40px;
@@ -386,14 +386,14 @@
             width: 70%;
           }
         }
-        h4 {
+        h2 {
           color: #6dc184;
           font-size: 30px;
           @media only screen and (max-width: 768px) {
             text-align: center;
           }
         }
-        h5 {
+        h3{
           font-size: 20px;
           color: #66a4ff;
           margin-bottom: 20px;
@@ -430,7 +430,7 @@
       width: 100%;
       position: relative;
       padding: 0 20px;
-      h6 {
+      h4 {
         text-align: center;
         flex: 1;
         color: #333;
@@ -506,7 +506,7 @@
         padding: 20px;
         width: 100%;
       }
-      h2 {
+      h5 {
         color: #333;
         font-size: 26px;
         @media only screen and (max-width: 768px) {
@@ -622,7 +622,7 @@
     box-shadow: 0px 1px 20px 9px rgba(0, 0, 0, 0.5);
     padding: 50px 0 0;
     margin-bottom: 50px;
-    & > h2 {
+    & > h6 {
       font-size: 40px;
       text-align: center;
       color: #333333;
@@ -671,7 +671,7 @@
           @media screen and (max-width: 1023px) {
             width: 100%;
           }
-          h3 {
+          h1 {
             color: #7f7f7f;
             font-size: 15px;
             font-family: "MuseoSans-900";

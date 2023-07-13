@@ -118,9 +118,9 @@ $lastblogs = $vacacional->getLastBlogs();
         </div>
       </div>
       <div class="city">
-        <h6 class="ms900 uppercase">
+        <h4 class="ms900 uppercase">
           o explora los atractivos turÍsticos de la ciudad
-        </h6>
+        </h4>
         <div class="cards">
           <a href="/<?=$lang?>/hoteles" class="city-card"><img src="images/dormir.jpg" alt=" donde dormir" /><span class="uppercase ms700">Dónde
               dormir</span></a>
@@ -136,7 +136,7 @@ $lastblogs = $vacacional->getLastBlogs();
       <div class="message">
         <img src="images/app_logo_1.png" alt="aplicacion" class="applogo" />
         <div class="text">
-          <h1 class="uppercase ms900">DESCARGA EL APP OFICIAL DE BOGOTÁ</h1>
+          <h5 class="uppercase ms900">DESCARGA EL APP OFICIAL DE BOGOTÁ</h5>
           <p class="ms700">
             ¡Es hora de descargar la APP de Bogotá DC Travel y tener a la
             ciudad en tus manos!
@@ -175,7 +175,7 @@ $lastblogs = $vacacional->getLastBlogs();
       </a>
     </section>
     <section class="recent-blogs">
-      <h2 class="uppercase ms700">ÚLTIMAS ENTRADAS DEL BLOG</h2>
+      <h6 class="uppercase ms700">ÚLTIMAS ENTRADAS DEL BLOG</h6>
       <div class="container grid-blogs"></div>
       <a href="" class="more uppercase">VER MÁS ARTÍCULOS</a>
     </section>
