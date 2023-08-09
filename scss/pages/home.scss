@@ -117,7 +117,7 @@
         @media only screen and (max-width: 1024px) {
           bottom: 0;
         }
-        h2 {
+        h1 {
           color: #fff;
           font-size: 48px;
           max-width: 600px;
@@ -170,6 +170,7 @@
     @media only screen and (max-width: 1024px) {
       padding: 30px 0 20px;
     }
+
     .flex {
       display: flex;
       align-items: center;
@@ -180,7 +181,7 @@
         gap: 30px;
       }
     }
-    h2 {
+    h1 {
       text-align: center;
       margin-bottom: 60px;
       font-size: 40px;
@@ -209,7 +210,11 @@
         width: 415px;
       }
     }
-
+    &-container,
+    .splide {
+      max-width: 400px;
+      width: 100%;
+    }
     .zone-card {
       width: 100%;
       height: 280px;
@@ -386,14 +391,14 @@
             width: 70%;
           }
         }
-        h4 {
+        h2 {
           color: #6dc184;
           font-size: 30px;
           @media only screen and (max-width: 768px) {
             text-align: center;
           }
         }
-        h5 {
+        h3 {
           font-size: 20px;
           color: #66a4ff;
           margin-bottom: 20px;
@@ -430,7 +435,7 @@
       width: 100%;
       position: relative;
       padding: 0 20px;
-      h6 {
+      h4 {
         text-align: center;
         flex: 1;
         color: #333;
@@ -442,6 +447,7 @@
         gap: 22px;
         align-items: center;
         justify-content: center;
+        min-height: 280px;
       }
       &-card {
         display: flex;
@@ -506,7 +512,7 @@
         padding: 20px;
         width: 100%;
       }
-      h2 {
+      h5 {
         color: #333;
         font-size: 26px;
         @media only screen and (max-width: 768px) {
@@ -618,128 +624,7 @@
       }
     }
   }
-  .recent-blogs {
-    box-shadow: 0px 1px 20px 9px rgba(0, 0, 0, 0.5);
-    padding: 50px 0 0;
-    margin-bottom: 50px;
-    & > h2 {
-      font-size: 40px;
-      text-align: center;
-      color: #333333;
-      margin-bottom: 30px;
-      @media only screen and (max-width: 768px) {
-        font-size: 20px;
-      }
-    }
-    .grid-blogs {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 50px;
-      margin-bottom: 50px;
-      @media screen and (max-width: 1024px) {
-        gap: 15px;
-        grid-template-columns: repeat(2, 1fr);
-      }
-      a {
-        max-width: 284px;
-        display: block;
-        width: 100%;
-        border-left: 2px solid #808080;
-        border-bottom: 2px solid #808080;
-        border-radius: 15px 0 0 0;
-        overflow: hidden;
-        @media screen and (max-width: 1024px) {
-          max-width: 100%;
-        }
-        .img {
-          height: 151px;
-          overflow: hidden;
-          border-radius: 15px 15px 15px 0;
-          @media screen and (max-width: 1023px) {
-            height: 130px;
-            width: 100%;
-          }
-          img {
-            object-fit: cover;
-            transition: all 0.6s cubic-bezier(0, 0.55, 0.45, 1);
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .desc {
-          padding: 20px 0 20px 15px;
-          @media screen and (max-width: 1023px) {
-            width: 100%;
-          }
-          h3 {
-            color: #7f7f7f;
-            font-size: 15px;
-            font-family: "MuseoSans-900";
-            margin-bottom: 8px;
-          }
-          h2 {
-            font-family: "MuseoSans-700";
-            color: #7f7f7f;
-            font-size: 21px;
-            margin-bottom: 10px;
-            @media screen and (max-width: 1023px) {
-              font-size: 14px;
-            }
-          }
-          p {
-            font-family: "MuseoSans-100";
-            color: #636262;
-            font-size: 16px;
-            margin-bottom: 15px;
-            @media screen and (max-width: 1023px) {
-              font-size: 12px;
-            }
-          }
-          .btn {
-            font-size: 16px;
-            color: #fff;
-            background-color: #ff7c47;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-            padding: 8px;
-            max-width: 188px;
-            border-radius: 5px;
-            @media only screen and (max-width: 768px) {
-              font-size: 12px;
-            }
-          }
-        }
-        &:hover {
-          opacity: 0.8;
-          .img {
-            img {
-              transform: scale(1.1);
-            }
-          }
-          .desc {
-            .btn {
-              background-color: darken($color: #ff7c47, $amount: 10);
-            }
-          }
-        }
-      }
-    }
-    a.more {
-      font-size: 16px;
-      color: #fff;
-      background-color: #5098ff;
-      display: flex;
-      align-items: center;
-      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-      justify-content: center;
-      padding: 8px;
-      &:hover {
-        background-color: darken($color: #5098ff, $amount: 10);
-      }
-    }
-  }
+
   section.add.container {
     position: relative;
     overflow: hidden;
@@ -768,4 +653,137 @@ button.closeadd {
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 0px 3px 5px #000;
   color: #fff;
+}
+
+.recent-blogs {
+  box-shadow: 0px 1px 20px 9px rgba(0, 0, 0, 0.5);
+  padding: 50px 0 0;
+  margin-bottom: 50px;
+  & > h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+    @media only screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  .grid-blogs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-bottom: 50px;
+    @media screen and (max-width: 1024px) {
+      gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    a {
+      max-width: 284px;
+      display: block;
+      width: 100%;
+      border-left: 1px solid #dfdfdf;
+      border-bottom: 1px solid #dfdfdf;
+      border-radius: 15px 0 0 0;
+      overflow: hidden;
+      @media screen and (max-width: 1024px) {
+        max-width: 100%;
+      }
+      .img {
+        height: 151px;
+        overflow: hidden;
+        border-radius: 15px 15px 15px 0;
+        @media screen and (max-width: 1023px) {
+          height: 130px;
+          width: 100%;
+        }
+        img {
+          object-fit: cover;
+          transition: all 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .desc {
+        padding: 20px 0 20px 15px;
+        @media screen and (max-width: 1023px) {
+          width: 100%;
+        }
+        h3 {
+          color: #7f7f7f;
+          font-size: 15px;
+          font-family: "MuseoSans-900";
+          margin-bottom: 8px;
+          min-height: 15px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        h2 {
+          font-family: "MuseoSans-700";
+          color: #7f7f7f;
+          font-size: 21px;
+          margin-bottom: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          @media screen and (max-width: 1023px) {
+            font-size: 14px;
+          }
+        }
+        p {
+          font-family: "MuseoSans-100";
+          color: #636262;
+          font-size: 16px;
+          margin-bottom: 15px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          @media screen and (max-width: 1023px) {
+            font-size: 12px;
+          }
+        }
+        .btn {
+          font-size: 16px;
+          color: #fff;
+          background-color: #ff7c47;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+          padding: 8px;
+          max-width: 188px;
+          border-radius: 5px;
+          @media only screen and (max-width: 768px) {
+            font-size: 12px;
+          }
+        }
+      }
+      &:hover {
+        opacity: 0.8;
+        .img {
+          img {
+            transform: scale(1.1);
+          }
+        }
+        .desc {
+          .btn {
+            background-color: darken($color: #ff7c47, $amount: 10);
+          }
+        }
+      }
+    }
+  }
+  a.more {
+    font-size: 16px;
+    color: #fff;
+    background-color: #5098ff;
+    display: flex;
+    align-items: center;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    justify-content: center;
+    padding: 8px;
+    &:hover {
+      background-color: darken($color: #5098ff, $amount: 10);
+    }
+  }
 }

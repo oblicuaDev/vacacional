@@ -33,6 +33,7 @@ async function seleccionarImagenAlAzar(imagenes, element) {
     element.src = imagenSeleccionada;
   }
 }
+let blogContainer = document.querySelector(".grid-blogs");
 
 // Llamar a la función para cada arreglo de imágenes
 window.addEventListener("load", function () {
@@ -49,13 +50,16 @@ window.addEventListener("load", function () {
       imagenes3,
       document.querySelector(".banner-add img")
     );
-    getRecentBlogs();
+
     getZonesHome();
+    getBannersCuadrados();
+  }
+  if (blogContainer) {
+    getRecentBlogs();
   }
 });
 
 async function getRecentBlogs() {
-  let blogContainer = document.querySelector(".home .container.grid-blogs");
   blogContainer.innerHTML = "";
 
   const response = await fetch("/vacacional/g/lastBlogs/");
@@ -71,8 +75,8 @@ async function getRecentBlogs() {
         </div>
         <div class="desc">
           <h3 class="uppercase">${blog.field_prod_rel_1}</h3>
-          <h2 class="uppercase">${shorter(blog.title, 35)}</h2>
-          <p>${blog.body_1}</p>
+          <h2 class="uppercase">${blog.title}</h2>
+          <p>${blog.field_intro_blog}</p>
           <div class="btn uppercase ms900">Seguir leyendo</div>
         </div>
       </a>`;
@@ -89,7 +93,6 @@ async function getZonesHome() {
     .then((res) => res.json())
     .then(async (data) => {
       for (const [index, zona] of data.entries()) {
-        console.log(zona);
         let template;
         if (zona.tid == 136) {
           template = `
@@ -156,6 +159,7 @@ async function getZonesHome() {
         });
       });
     });
+  document.querySelector(".zones .zones-container").classList.remove("loading");
 }
 
 async function localidades(zonaId) {
@@ -171,6 +175,19 @@ async function localidades(zonaId) {
   });
 
   return text;
+}
+async function getBannersCuadrados() {
+  document.querySelector(".cards").classList.add("loading");
+  await fetch("g/banners_cuadrados/")
+    .then((res) => res.json())
+    .then(async (data) => {
+      for (const [index, banner] of data.entries()) {
+        let urlImg = await getImageFromCacheOrFetch(banner.field_image);
+        let template = `<a href="${banner.field_link}" target="_blank" class="city-card"><img src="${urlImg}" alt="${banner.title}" /><span class="uppercase ms700">${banner.title}</span></a>`;
+        document.querySelector(".cards").innerHTML += template;
+      }
+    });
+  document.querySelector(".cards").classList.remove("loading");
 }
 
 function shorter(text, chars_limit = 35) {
