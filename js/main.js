@@ -97,7 +97,7 @@ async function getZonesHome() {
           <div class="zone-card">
             <img src="${zona.field_imagen_zona}" alt="zona"${zona.name} />
             <div class="info">
-              <h1 class="uppercase ms900">${zona.name}</h1>
+              <h2 class="uppercase ms900">${zona.name}</h2>
               <a href="/${actualLang}/alrededores-de-bogota" class="uppercase ms900 btn wait">VISITAR</a>
             </div>
           </div>
