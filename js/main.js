@@ -74,8 +74,8 @@ async function getRecentBlogs() {
           <img loading="lazy" data-src="${urlImg}" alt="Diversidad, cultura y música en Colombia al Parque" class="zone_img lazyload" src="https://via.placeholder.com/400x400.jpg?text=Bogotadc.travel" />
         </div>
         <div class="desc">
-          <h2 class="uppercase">${blog.field_prod_rel_1}</h2>
-          <h3 class="uppercase">${blog.title}</h3>
+          <h1 class="uppercase">${blog.field_prod_rel_1}</h1>
+          <h2 class="uppercase">${blog.title}</h2>
           <p>${blog.field_intro_blog}</p>
           <div class="btn uppercase ms900">Seguir leyendo</div>
         </div>
