@@ -110,7 +110,7 @@ async function getZonesHome() {
           <div class="zone-card">
             <img src="${zona.field_imagen_zona}" alt="zona"${zona.name} />
             <div class="info">
-              <h2 class="uppercase ms900">${zona.name}</h2>
+              <h1 class="uppercase ms900">${zona.name}</h1>
               <ul class="localidades">
                 ${localidadesText}
               </ul>
