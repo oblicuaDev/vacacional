@@ -3,31 +3,17 @@
   "enableMainHeader": true,
   "menuItems": [
     {
+      "class":"explora",
       "es": {
-        "title": "Inicio",
-        "link": "/es"
+        "title": "Explora Bogotá"
       },
       "en": {
-        "title": "Explora Bogotá",
-        "link": "/en"
+        "title": "Explore Bogotá"
       },
       "pt": {
-        "title": "Explore Bogotá",
-        "link": "/pt"
+        "title": "Explore Bogotá"
       },
       "fr": {
-        "title": "Explore Bogotá",
-        "link": "/fr"
-      }
-    },
-    {
-      "es": {
-        "title": "Explora Bogotá"
-      },
-      "en": {
-        "title": "Explora Bogotá"
-      },
-      "pt": {
         "title": "Explore Bogotá"
       },
       "children": [
@@ -37,12 +23,16 @@
             "link": "/es/explora/cerros/2572"
           },
           "en": {
-            "title": "Cerros",
+            "title": "Hills",
             "link": "/en/explora/cerros/2572"
           },
           "pt": {
             "title": "Cerros",
             "link": "/pt/explora/cerros/2572"
+          },
+          "fr": {
+            "title": "Cerros",
+            "link": "/fr/explora/cerros/2572"
           }
         },
         {
@@ -51,23 +41,53 @@
             "link": "/es/explora/ruta-colonial/456"
           },
           "en": {
-            "title": "Ruta Colonial",
+            "title": "Colonial Route",
             "link": "/en/explora/ruta-colonial/456"
           },
           "pt": {
-            "title": "Ruta Colonial",
+            "title": "Rota Colonial",
             "link": "/pt/explora/ruta-colonial/456"
+          },
+          "fr": {
+            "title": "Route coloniale",
+            "link": "/fr/explora/ruta-colonial/456"
           }
         },
         {
-          "es": { "title": "Museos", "link": "/es/explora/museos/299" },
-          "en": { "title": "Museos", "link": "/en/explora/museos/299" },
-          "pt": { "title": "Museos", "link": "/pt/explora/museos/299" }
+          "es": {
+            "title": "Museos",
+            "link": "/es/explora/museos/299"
+          },
+          "en": {
+            "title": "Museums",
+            "link": "/en/explora/museos/299"
+          },
+          "pt": {
+            "title": "Museus",
+            "link": "/pt/explora/museos/299"
+          },
+          "fr": {
+            "title": "Musées",
+            "link": "/fr/explora/museos/299"
+          }
         },
         {
-          "es": { "title": "Termales", "link": "/es/explora/termales/112" },
-          "en": { "title": "Termales", "link": "/en/explora/termales/112" },
-          "pt": { "title": "Termales", "link": "/pt/explora/termales/112" }
+          "es": {
+            "title": "Termales",
+            "link": "/es/explora/termales/112"
+          },
+          "en": {
+            "title": "Hot Springs",
+            "link": "/en/explora/termales/112"
+          },
+          "pt": {
+            "title": "Águas Termais",
+            "link": "/pt/explora/termales/112"
+          },
+          "fr": {
+            "title": "Sources chaudes",
+            "link": "/fr/explora/termales/112"
+          }
         },
         {
           "es": {
@@ -75,15 +95,35 @@
             "link": "/es/explora/musica-arte/88"
           },
           "en": {
-            "title": "Música-Arte",
+            "title": "Music-Art",
             "link": "/en/explora/musica-arte/88"
           },
-          "pt": { "title": "Música-Arte", "link": "/pt/explora/musica-arte/88" }
+          "pt": {
+            "title": "Música-Arte",
+            "link": "/pt/explora/musica-arte/88"
+          },
+          "fr": {
+            "title": "Musique-Art",
+            "link": "/fr/explora/musica-arte/88"
+          }
         },
         {
-          "es": { "title": "Senderismo", "link": "/es/explora/senderismo/64" },
-          "en": { "title": "Senderismo", "link": "/en/explora/senderismo/64" },
-          "pt": { "title": "Senderismo", "link": "/pt/explora/senderismo/64" }
+          "es": {
+            "title": "Senderismo",
+            "link": "/es/explora/senderismo/64"
+          },
+          "en": {
+            "title": "Hiking",
+            "link": "/en/explora/senderismo/64"
+          },
+          "pt": {
+            "title": "Caminhada",
+            "link": "/pt/explora/senderismo/64"
+          },
+          "fr": {
+            "title": "Randonnée",
+            "link": "/fr/explora/senderismo/64"
+          }
         },
         {
           "es": {
@@ -91,17 +131,55 @@
             "link": "/es/explora/biciturismo/62"
           },
           "en": {
-            "title": "Biciturismo",
+            "title": "Bike Tourism",
             "link": "/en/explora/biciturismo/62"
           },
-          "pt": { "title": "Biciturismo", "link": "/pt/explora/biciturismo/62" }
+          "pt": {
+            "title": "Turismo de Bicicleta",
+            "link": "/pt/explora/biciturismo/62"
+          },
+          "fr": {
+            "title": "Tourisme à Vélo",
+            "link": "/fr/explora/biciturismo/62"
+          }
         },
         {
-          "es": { "title": "Gastronomía", "link": "/es/explora/gastronomia/6" },
-          "en": { "title": "Gastronomía", "link": "/en/explora/gastronomia/6" },
-          "pt": { "title": "Gastronomía", "link": "/pt/explora/gastronomia/6" }
+          "es": {
+            "title": "Gastronomía",
+            "link": "/es/explora/gastronomia/6"
+          },
+          "en": {
+            "title": "Gastronomy",
+            "link": "/en/explora/gastronomia/6"
+          },
+          "pt": {
+            "title": "Gastronomia",
+            "link": "/pt/explora/gastronomia/6"
+          },
+          "fr": {
+            "title": "Gastronomie",
+            "link": "/fr/explora/gastronomia/6"
+          }
         }
       ]
+    },
+    {
+      "es": {
+        "title": "Planes y experiencias",
+        "link": "/es/plan-bogota/"
+      },
+      "en": {
+        "title": "Plans and Experiences",
+        "link": "/en/plan-bogota/"
+      },
+      "pt": {
+        "title": "Planos e Experiências",
+        "link": "/pt/plan-bogota/"
+      },
+      "fr": {
+        "title": "Plans et Expériences",
+        "link": "/fr/plan-bogota/"
+      }
     },
     {
       "es": {
@@ -109,36 +187,18 @@
         "link": "/es/eventos/agenda-general-148"
       },
       "en": {
-        "title": "Qué hacer",
+        "title": "What to Do",
         "link": "/en/eventos/agenda-general-148"
       },
       "pt": {
-        "title": "Qué hacer",
+        "title": "O que fazer",
         "link": "/pt/eventos/agenda-general-148"
       },
       "fr": {
-        "title": "Qué hacer",
+        "title": "Que faire",
         "link": "/fr/eventos/agenda-general-148"
       },
       "children": [
-        {
-          "es": {
-            "title": "Ofertas y planes",
-            "link": "/es/plan-bogota/"
-          },
-          "en": {
-            "title": "Ofertas y planes",
-            "link": "/en/plan-bogota/"
-          },
-          "pt": {
-            "title": "Ofertas y planes",
-            "link": "/pt/plan-bogota/"
-          },
-          "fr": {
-            "title": "Ofertas y planes",
-            "link": "/fr/plan-bogota/"
-          }
-        },
         {
           "es": {
             "title": "Eventos",
@@ -153,7 +213,7 @@
             "link": "/pt/eventos/agenda-general-148"
           },
           "fr": {
-            "title": "Eventos",
+            "title": "Événements",
             "link": "/fr/eventos/agenda-general-148"
           }
         },
@@ -183,15 +243,15 @@
         "link": "/es/hoteles"
       },
       "en": {
-        "title": "Dónde dormir",
+        "title": "Where to Stay",
         "link": "/en/hoteles"
       },
       "pt": {
-        "title": "Dónde dormir",
+        "title": "Onde ficar",
         "link": "/pt/hoteles"
       },
       "fr": {
-        "title": "Dónde dormir",
+        "title": "Où loger",
         "link": "/fr/hoteles"
       }
     },
@@ -201,31 +261,34 @@
         "link": "/es/restaurantes"
       },
       "en": {
-        "title": "Dónde comer",
+        "title": "Where to Eat",
         "link": "/en/restaurantes"
       },
       "pt": {
-        "title": "Dónde comer",
+        "title": "Onde Comer",
         "link": "/pt/restaurantes"
       },
       "fr": {
-        "title": "Dónde comer",
+        "title": "Où manger",
         "link": "/fr/restaurantes"
       }
     },
-
     {
       "es": {
         "title": "Información Útil",
         "link": "/es/preguntas-frecuentes"
       },
       "en": {
-        "title": "Información Útil",
+        "title": "Useful Information",
         "link": "/en/preguntas-frecuentes"
       },
       "pt": {
-        "title": "Informação útil",
+        "title": "Informação Útil",
         "link": "/pt/preguntas-frecuentes"
+      },
+      "fr": {
+        "title": "Informations utiles",
+        "link": "/fr/preguntas-frecuentes"
       }
     }
   ]

@@ -141,6 +141,16 @@ async function getZonesHome() {
           next: "splide__arrow--next your-class-next",
         },
       }).mount();
+      splide.on("active", function (e) {
+        if (document.querySelector(`.zoneSvg.active`)) {
+          document.querySelector(`.zoneSvg.active`).classList.remove("active");
+        }
+        if (document.querySelector(`#zone-${e.slide.dataset.zone}`)) {
+          document
+            .querySelector(`#zone-${e.slide.dataset.zone}`)
+            .classList.add("active");
+        }
+      });
       document.querySelectorAll(".zoneSvg").forEach((svg) => {
         svg.addEventListener("click", () => {
           document.querySelector(".zoneSvg.active").classList.remove("active");
@@ -149,6 +159,7 @@ async function getZonesHome() {
             .querySelector(`[data-zone="${svg.id.split("-")[1]}"]`)
             .classList.add("active");
           const { Move } = splide.Components;
+
           splide.go(
             parseInt(
               document.querySelector(`[data-zone="${svg.id.split("-")[1]}"]`)

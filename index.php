@@ -13,16 +13,17 @@ $sliders = $vacacional->getSlidersHome();
         <div class="splide__track">
           <ul class="splide__list">
             <?php for ($i=0; $i < count($sliders) ; $i++) {  $slider= $sliders[$i]; ?>
-              <li class="splide__slide">
-                <img loading="lazy" class="lazyload" src="https://via.placeholder.com/400x400.jpg?text=Bogotadc.travel" data-src="<?=$slider->field_desktop_img?>" alt="grandeseventos" />
-                <div class="content">
-                  <h1 class="ms900 uppercase">
-                    <?=$slider->title?>
-                  </h1>
-                  <p class="ms500"><?=$slider->field_link?></p>
-                  <a class="wait" href="<?=$slider->title?>"><?=$slider->field_texto_del_boton?></a>
-                </div>
-              </li>
+            <li class="splide__slide">
+              <img loading="lazy" class="lazyload" src="https://via.placeholder.com/400x400.jpg?text=Bogotadc.travel"
+                data-src="<?=$slider->field_desktop_img?>" alt="grandeseventos" />
+              <div class="content">
+                <h1 class="ms900 uppercase">
+                  <?=$slider->title?>
+                </h1>
+                <p class="ms500"><?=$slider->field_desc?></p>
+                <a class="wait" href="<?=$slider->field_link?>"><?=$slider->field_texto_del_boton?></a>
+              </div>
+            </li>
             <?php }?>
           </ul>
         </div>
@@ -79,6 +80,56 @@ $sliders = $vacacional->getSlidersHome();
         <img src="images/logopb.svg" alt="plan Bogota" />
         <a href="/plan-bogota" class="ms900 uppercase btn">RESERVA GRATIS AHORA</a>
       </div>
+      <div class="splide plansSplide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <?php 
+                  $pbInfo = $vacacional->getInfoGnrlPB();
+                  $plans = $vacacional->getRecommendPlans($pbInfo->field_ofertas_recomendadas); 
+                  for ($i=0; $i < count($plans); $i++) { $plan = $plans[$i]; ?>
+            <li class="splide__slide">
+              <a href="/<?=$lang?><?=$project_base?>plan/<?=$vacacional->get_alias($plan->title)?>-<?=$plan->nid?>"
+                class="plansSplide__item">
+                <div class="image">
+                  <img src="<?= $plan->field_pb_oferta_img_listado?>" alt="<?= $plan->title?>" />
+                </div>
+                <div class="info">
+                  <div class="discount ms900">
+                    <?= $plan->field_percent?>% <small class="ms500">DCTO</small>
+                  </div>
+                  <div class="prices">
+                    <p class="prices-discount ms500">$
+                      <?= number_format($plan->field_pa,0,",",".")?>
+                    </p>
+                    <p class="prices-total ms900">$
+                      <?= number_format($plan->field_pd,0,",",".")?>
+                    </p>
+                  </div>
+                  <strong class="ms900">
+                    <?= $plan->title?>
+                  </strong>
+                  <p class="ms100">
+                    <?= $plan->field_pb_oferta_desc_corta?>
+
+                  </p>
+                  <small class="ms900 uppercase link"> <?=$pbInfo->field_ui_7?> </small>
+                </div>
+              </a>
+            </li>
+            <?php }?>
+          </ul>
+        </div>
+        <div class="splide__arrows splide__arrows--ltr">
+          <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
+            aria-controls="splide01-track">
+            <img src="images/arrowleft.svg" alt="flechaizquierda" />
+          </button>
+          <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
+            aria-controls="splide01-track">
+            <img src="images/arrowright.svg" alt="flechaderecha" />
+          </button>
+        </div>
+      </div>
     </div>
     <div class="city">
       <h4 class="ms900 uppercase">
@@ -87,6 +138,7 @@ $sliders = $vacacional->getSlidersHome();
       <div class="cards">
       </div>
     </div>
+
   </section>
   <section class="mobile">
     <img loading="lazy" class="lazyload" src="https://via.placeholder.com/400x400.jpg?text=Bogotadc.travel"
@@ -129,22 +181,22 @@ $sliders = $vacacional->getSlidersHome();
       <img loading="lazy" class="lazyload" src="https://via.placeholder.com/400x400.jpg?text=Bogotadc.travel"
         data-src="/img/rld/logo-full.svg" alt="ruta leyenda" />
     </a>
-    <a href="" class="more-card">
+    <!-- <a href="" class="more-card">
       <button class="closeadd">X</button>
       <img loading="lazy" class="lazyload" src="https://via.placeholder.com/400x400.jpg?text=Bogotadc.travel"
         data-src="images/add.jpg" alt="ruta leyenda" />
-    </a>
+    </a> -->
   </section>
   <section class="recent-blogs">
     <h2 class="uppercase ms700">ÚLTIMAS ENTRADAS DEL BLOG</h2>
     <div class="container grid-blogs"></div>
     <a href="/<?=$lang?>/blog" class="more uppercase">VER MÁS ARTÍCULOS</a>
   </section>
-  <section class="add container">
+  <!-- <section class="add container">
     <button class="closeadd">X</button>
     <img loading="lazy" class="lazyload" src="https://via.placeholder.com/400x400.jpg?text=Bogotadc.travel"
       data-src="images/largeadd.jpg" alt="turistea por bogota" />
-  </section>
+  </section> -->
 </main>
 
 <? include 'includes/imports.php'?>
@@ -161,6 +213,21 @@ $sliders = $vacacional->getSlidersHome();
       next: "splide__arrow--next your-class-next",
       pagination: "splide__pagination your-class-pagination",
       page: "splide__pagination__page your-class-page",
+    },
+  }).mount();
+  const splide = new Splide(".splide.plansSplide", {
+    perPage: 1,
+    gap: 10,
+    focus: "center",
+    type: "loop",
+    width: 400,
+    pagination: false,
+    lazyLoad: "nearby",
+    classes: {
+      arrows: "splide__arrows your-class-arrows",
+      arrow: "splide__arrow your-class-arrow",
+      prev: "splide__arrow--prev your-class-prev",
+      next: "splide__arrow--next your-class-next",
     },
   }).mount();
 

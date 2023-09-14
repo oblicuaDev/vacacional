@@ -44,7 +44,37 @@ class vacacional extends bogota{
         return $result;
 
     }
-
+    function getInfoGnrlPB(){
+        if (isset($_SESSION['pbinfo'][$this->language])) {
+            $gnrl = $_SESSION['pbinfo'][$this->language];
+        } else {
+            $result = $this->query("pb_infognrl");
+            $gnrl = $result[0];
+            $_SESSION['pbinfo'][$this->language] = $gnrl;
+        }
+        return $gnrl;
+        }
+        function getPlans($id = "all"){
+            $result = $this->query("ofertas/".$id);
+            if($id == "all"){
+                return $result;
+            }else{
+                return $result[0];
+            }
+        }
+        function getRecommendPlans($ids){
+            $plans = explode(", ", $ids);  
+            if(count($plans) > 1){
+               $arr = array();
+               for ($a=0; $a < count($plans); $a++) { 
+                   array_push($arr, $this->getPlans($plans[$a]));
+               }
+               return $arr;
+               }else{
+                   $plan = $this->getPlans($ids);
+                   return $plan;
+               }
+        }
 }
 
 
