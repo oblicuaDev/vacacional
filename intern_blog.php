@@ -55,14 +55,14 @@
 	</div>
 	</div>
 	<div class="content">
-		<h2 class="uppercase"><?=$blog->field_date?></h2>
+		<h3 class="uppercase"><?=$blog->field_date?></h3>
 		<div class="blog_content">
 			<?=$blog->body?>
 		</div>
 	</div>
 	<?php if(count($blogsRel) > 0){ ?>
 		<div class="container_interest">
-			<h3 class="title">También te puede interesar</h3>
+			<h2 class="title">También te puede interesar</h2>
 			<ul class="blog_rel">
 				<?php 
 				for ($countBlogs=0; $countBlogs < count($blogsRel); $countBlogs++) { 
