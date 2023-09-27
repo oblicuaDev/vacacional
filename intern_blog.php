@@ -55,7 +55,7 @@
 	</div>
 	</div>
 	<div class="content">
-		<h3 class="uppercase"><?=$blog->field_date?></h3>
+		<h2 class="uppercase"><?=$blog->field_date?></h2>
 		<div class="blog_content">
 			<?=$blog->body?>
 		</div>
