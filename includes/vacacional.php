@@ -62,6 +62,10 @@ class vacacional extends bogota{
                 return $result[0];
             }
         }
+        function getprodTax($id){
+            $result = $this->query("productcat/".$id);
+            return $result[0];
+        }
         function getRecommendPlans($ids){
             $plans = explode(", ", $ids);  
             if(count($plans) > 1){
@@ -74,6 +78,14 @@ class vacacional extends bogota{
                    $plan = $this->getPlans($ids);
                    return $plan;
                }
+        }
+        function getProductsRel($id){
+            $result = $this->query("products/all/". $id);
+            return $result;
+        }
+        function getDescargables($prod){
+            $res = $this->query("tripinfo/3/" . $prod,"",true); 
+            return $res;
         }
 }
 
