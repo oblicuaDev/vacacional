@@ -62,7 +62,7 @@
 	</div>
 	<?php if(count($blogsRel) > 0){ ?>
 		<div class="container_interest">
-			<h2 class="title">También te puede interesar</h2>
+			<h3 class="title">También te puede interesar</h3>
 			<ul class="blog_rel">
 				<?php 
 				for ($countBlogs=0; $countBlogs < count($blogsRel); $countBlogs++) { 
