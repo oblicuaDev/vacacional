@@ -34,10 +34,10 @@ $b->products(0, $allBlogs[$blogi]->field_prod_rel)); } }
                 />
               </div>
               <div class="desc">
-                <h3 class="uppercase">
+                <h2 class="uppercase">
                   <?= $b->products(0, $allBlogs[$i]->field_prod_rel)->title ?>
-                </h3>
-                <h2 class="uppercase"><?= $allBlogs[$i]->title ?></h2>
+                </h2>
+                <h3 class="uppercase"><?= $allBlogs[$i]->title ?></h3>
                 <small><?= $allBlogs[$i]->field_date ?></small>
               </div>
             </a>
