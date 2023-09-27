@@ -89,8 +89,8 @@
 								/>
 							</div>
 							<div class='desc'>
-								<h3 class='uppercase'>".$b->products(0, $singleBlog->field_prod_rel)->title."</h3>
-								<h2 class='uppercase'>".$singleBlog->title."</h2>
+								<h2 class='uppercase'>".$b->products(0, $singleBlog->field_prod_rel)->title."</h2>
+								<h3 class='uppercase'>".$singleBlog->title."</h3>
 								<small>".$singleBlog->field_date."</small>
 							</div>
 							</a>
