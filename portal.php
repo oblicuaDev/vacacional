@@ -63,8 +63,8 @@ if ($_GET['zoneID']) {
                     <label class="switch" for="closeMe">
                         <input type="checkbox" aria-label="closeMe" id="closeMe">
                         <span class="slider round"></span>
+                        <small><?= $b->generalInfo->field_cerca_txt ?></small>
                     </label>
-                    <label for="closeMe"><?= $b->generalInfo->field_cerca_txt ?></label>
                 </div>
                 <?php
                 if ($_GET['productID']) {
