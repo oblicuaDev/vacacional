@@ -60,9 +60,13 @@ if ($_GET['zoneID']) {
         <div class="left">
             <form action="set/bla.php">
                 <div class="container-switch">
+                    <input type="checkbox" id="closeMe" aria-label="<?= $b->generalInfo->field_cerca_txt ?>">
+                
+                <!-- Label visible asociado al checkbox -->
                     <label for="closeMe"><?= $b->generalInfo->field_cerca_txt ?></label>
+                
+                <!-- Switch estilizado -->
                     <label class="switch" for="closeMe" aria-hidden="true">
-                        <input type="checkbox" id="closeMe">
                         <span class="slider round"></span>
                     </label>
                 </div>
@@ -75,7 +79,12 @@ if ($_GET['zoneID']) {
                     echo '<h3 class="uppercase">' . $singlePara->title . '</h3>';
                 }
                 ?>
-                <div class="custom-select"><select></select></div>
+                <!-- Etiqueta para el select -->
+                <label for="myDropdown">Selecciona una opción:</label>
+                <div class="custom-select">
+                    <select id="myDropdown"></select>
+                </div>
+
                 <div class="filterContainer">
                     <div class="filters"></div>
                 </div>
