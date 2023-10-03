@@ -60,10 +60,10 @@ if ($_GET['zoneID']) {
         <div class="left">
             <form action="set/bla.php">
                 <div class="container-switch">
-                    <label class="switch" for="closeMe">
-                        <input type="checkbox" aria-label="closeMe" id="closeMe">
+                    <label for="closeMe"><?= $b->generalInfo->field_cerca_txt ?></label>
+                    <label class="switch" for="closeMe" aria-hidden="true">
+                        <input type="checkbox" id="closeMe">
                         <span class="slider round"></span>
-                        <small><?= $b->generalInfo->field_cerca_txt ?></small>
                     </label>
                 </div>
                 <?php
