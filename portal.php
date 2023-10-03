@@ -61,7 +61,7 @@ if ($_GET['zoneID']) {
             <form action="set/bla.php">
                 <div class="container-switch">
                     <label class="switch" for="closeMe">
-                        <input type="checkbox" id="closeMe">
+                        <input type="checkbox" aria-label="closeMe" id="closeMe">
                         <span class="slider round"></span>
                     </label>
                     <small><?= $b->generalInfo->field_cerca_txt ?></small>
