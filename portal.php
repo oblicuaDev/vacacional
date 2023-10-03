@@ -60,14 +60,14 @@ if ($_GET['zoneID']) {
         <div class="left">
             <form action="set/bla.php">
                 <div class="container-switch">
-                    <input type="checkbox" id="closeMe" aria-label="<?= $b->generalInfo->field_cerca_txt ?>">
+                    <input type="checkbox" id="closeMe" aria-labelledby="checkboxLabel" aria-describedby="checkboxDescription">
                 
                 <!-- Label visible asociado al checkbox -->
-                    <label for="closeMe"><?= $b->generalInfo->field_cerca_txt ?></label>
+                    <label id="checkboxLabel" for="closeMe"><?= $b->generalInfo->field_cerca_txt ?></label>
                 
                 <!-- Switch estilizado -->
-                    <label class="switch" for="closeMe" aria-hidden="true">
-                        <span class="slider round"></span>
+                    <label class="switch" for="closeMe" id="checkboxDescription" aria-hidden="true">
+                        <span class="slider round" aria-hidden="true"></span>
                     </label>
                 </div>
                 <?php
