@@ -64,7 +64,7 @@ if ($_GET['zoneID']) {
                         <input type="checkbox" id="closeMe">
                         <span class="slider round"></span>
                     </label>
-                    <small><?= $b->generalInfo->field_cerca_txt ?></small>
+                    <small><?= $b->generalInfo->field_cerca_txt ?></small>    
                 </div>
                 <?php
                 if ($_GET['productID']) {
@@ -75,7 +75,12 @@ if ($_GET['zoneID']) {
                     echo '<h3 class="uppercase">' . $singlePara->title . '</h3>';
                 }
                 ?>
-                <div class="custom-select"><select></select></div>
+                <!-- Etiqueta para el select -->
+                <label for="myDropdown">Selecciona una opción:</label>
+                <div class="custom-select">
+                    <select id="myDropdown"></select>
+                </div>
+
                 <div class="filterContainer">
                     <div class="filters"></div>
                 </div>

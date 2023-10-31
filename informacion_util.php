@@ -86,9 +86,9 @@ function filter_callback($element) {
                     <img loading="lazy"
                         data-src="<?= $urlGlobal ?><?= $b->generalInfo->field_fondo_app ? $b->generalInfo->field_fondo_app : 'img/noimg.png' ?>"
                         alt="imagen_alt" class="links_item_img lazyload" src="https://picsum.photos/20/20">
-                    <h4 class="links_item_title">
+                    <h3 class="links_item_title">
                         <?= $b->generalInfo->field_texto_boton_app_movil ?>
-                    </h4>
+                    </h3>
                 </a>
             </div>
             <div class="links_item last_item">
