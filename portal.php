@@ -86,13 +86,13 @@ if ($_GET['zoneID']) {
         </div>
     </section>
     <?php
-    include 'templates/filters_mobile.php';
+    include '../templates/filters_mobile.php';
 
     ?>
     <?php if ($isMobile) { ?>
         <div class="curveMobile"></div>
     <?php } ?>
-<? include 'templates/ofertasRel.php'?>
+<? include '../templates/ofertasRel.php'?>
 
 </main>
 <?php include 'includes/imports.php'; ?>

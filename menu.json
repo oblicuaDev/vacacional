@@ -3,7 +3,7 @@
   "enableMainHeader": true,
   "menuItems": [
     {
-      "class":"explora",
+      "class": "explora",
       "es": {
         "title": "Explora Bogotá"
       },
@@ -215,6 +215,24 @@
           "fr": {
             "title": "Événements",
             "link": "/fr/eventos/agenda-general-148"
+          }
+        },
+        {
+          "es": {
+            "title": "Diseña tu viaje",
+            "link": "/es/disena-tu-viaje"
+          },
+          "en": {
+            "title": "Design your trip",
+            "link": "/en/design-your-trip"
+          },
+          "pt": {
+            "title": "Projete sua viagem",
+            "link": "/pt/projete-sua-viagem"
+          },
+          "fr": {
+            "title": "Concevez votre voyage",
+            "link": "/fr/concevez-votre-voyage"
           }
         },
         {
